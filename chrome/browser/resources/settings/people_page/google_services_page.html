@@ -1,0 +1,9 @@
+
+
+<settings-subpage page-title="$i18n{googleServicesPageTitle}"
+    route-path="${this.routePath}">
+  ${this.shouldShowPageContents_() ? html`
+    <settings-personalization-options .syncStatus="${this.syncStatus_}">
+    </settings-personalization-options>
+  ` : ''}
+</settings-subpage>
